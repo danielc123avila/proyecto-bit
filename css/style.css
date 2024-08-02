@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #f3e5d8;
+}
+
+#list {
+  background-color: #f3e5d8;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+li {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+#grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: header;
+  margin: 20px;
+}
+
+main {
+  grid-area: main;
+  max-width: 700px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+aside {
+  grid-area: aside;
+}
+
+p {
+  margin: 5px;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 40px;
+  padding: 10px;
+  color: #7e4333;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2 {
+  font-size: 30px;
+  padding: 10px;
+  color: #7e4333;
+}
+
+#lista {
+  padding-bottom: 20px;
+}
+
+h2 {
+}
+
+#pabellon {
+  width: 100%;
+  padding: 10px;
+}
+
+#cabecera {
+  background-color: green;
+  padding: 20px;
+  border-radius: 10px;
+}
+#up {
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+#down {
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+.more-recipes {
+  display: flex;
+  padding: 5px;
+}
+
+.more-recipes img {
+  width: 35%;
+  padding: 10px;
+}
+.article div{
+    gap: 10px;
+}
+
+footer {
+  background-color: green;
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border-bottom: 1px solid #7e4333;
+  text-align: center;
+  padding: 5px;
+}
