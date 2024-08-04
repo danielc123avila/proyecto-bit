@@ -17,20 +17,19 @@ body {
 li {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
 }
 
 #grid {
   display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 1fr 100px;
+  ;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: ;
   grid-template-areas:
-    "header header header"
-    "main main aside"
-    "footer footer footer";
+    "main aside"
 }
+
 
 header {
   display: flex;
@@ -40,23 +39,29 @@ header {
   margin: 20px;
 }
 
+header a {
+  color: white;
+text-decoration: none;
+}
+
 main {
   grid-area: main;
-  max-width: 700px;
-  margin: auto;
+  margin-left: 60px;
+  margin-right: 20px;
   background-color: white;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 aside {
   grid-area: aside;
+  
 }
 
 p {
   margin: 5px;
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
 }
 
@@ -72,6 +77,10 @@ h2 {
   font-size: 30px;
   padding: 10px;
   color: #7e4333;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 
 #lista {
@@ -93,12 +102,16 @@ h2 {
 }
 #up {
   margin: 20px;
+  margin-right: 50px;
+  margin-left: auto;
   background-color: white;
   border-radius: 10px;
   padding: 10px;
 }
 #down {
   margin: 20px;
+  margin-left: auto;
+  margin-right: 50px;
   background-color: white;
   border-radius: 10px;
   padding: 10px;
@@ -124,6 +137,10 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  padding: 20px;
+  margin: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 table {
   margin-left: auto;
@@ -138,3 +155,19 @@ td {
   text-align: center;
   padding: 5px;
 }
+
+  @media screen and (max-width: 1008px) { 
+  #grid{
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      "main"
+      "aside";
+  }
+    aside {
+      margin-left: 60px;
+}
+main{
+  margin-right: 60px;
+}
+  }
