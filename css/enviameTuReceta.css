@@ -2,10 +2,58 @@
     box-sizing: border-box;
     margin: 0;
   }
-  
+
   body {
     background-color: #f3e5d8;
   }
+
+  form {
+    margin: 10px auto;
+    padding: 20px;
+    background-color: white;
+    max-width: 850px;
+    border-radius: 5px;
+  }
+
+  label {
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    font-size: 30px;
+    padding: 10px;
+    color: #7e4333;
+    font-family: "DM Sans", sans-serif;
+    font-size: medium;
+    font-weight:bold ;
+    font-style: normal;
+  }
+
+  input:not(input[type="radio"]) {
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(216, 206, 206);
+    border: 0px;
+  }
+  textarea:not(textarea[type="radio"]) {
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    background-color: rgb(216, 206, 206);
+    border-radius: 5px;
+    border: 0px;
+  }
+
+  button[type="submit"]{
+    border-radius: 5px;
+    border: 0px;
+    background-color: green;
+    padding: 5px;
+    width: 60px;
+    margin-top: 10px;
+  }
+
 
   p {
     margin: 5px;
@@ -32,10 +80,6 @@
     font-weight: bold;
     font-style: normal;
   }
-
-
-
-
   header {
     display: flex;
     justify-content: space-between;
@@ -47,27 +91,11 @@
     color: white;
   text-decoration: none;
   }
-
   #cabecera {
     background-color: green;
     padding: 20px;
     border-radius: 10px;
   }
-
-  #fotoinicio img {
-    height:200px;
-    width: 100%;
-    padding: 0 30px;
-    border-radius: 5px;
-    display: inline-block;
-  }
-  #fotoinicio h1{
-    position: absolute;
-    color: white;
-    margin-top: 100px;
-    margin-left: 50px;
-  }
-
 
   footer {
     background-color: green;
@@ -81,23 +109,8 @@
     border-top-right-radius: 10px;
   }
 
-  .recetas{
-    background-color: white;
-    padding: 10px;
-    max-width: 70%;
-    border-radius: 5px;
-    margin: 20px;
-    margin-right: 30px;
-  }
-  .recetas img{
-    width: 100%;
-    border-radius: 5px;
-  }
-  .first{
-    display: flex;
-    width: 100%;
-  }
-  .second{
-    display: flex;
-    width: 100%;
+  @media screen and (max-width: 769px) {
+    form{
+      margin: 20px;
+    }
   }
