@@ -20,7 +20,7 @@
     padding: 10px;
     color: #7e4333;
     font-family: "DM Serif Display", serif;
-    font-weight: 400;
+    font-weight: 750;
     font-style: bold;
   }
   h2 {
@@ -76,7 +76,7 @@
   #fotoinicio h1{
     position: absolute;
     color: white;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 50px;
   }
 
