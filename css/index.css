@@ -68,10 +68,11 @@
 
   #fotoinicio img {
     height:200px;
-    width: 100%;
+    width: 95%;
     padding: 0 30px;
     border-radius: 5px;
     display: inline-block;
+    margin-left: 20px;
   }
   #fotoinicio h1{
     position: absolute;

@@ -51,6 +51,7 @@ main {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 20px;
+  padding: 20px;
 }
 
 aside {
@@ -70,8 +71,8 @@ h1 {
   padding: 10px;
   color: #7e4333;
   font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 750;
+  font-style: bold;
 }
 h2 {
   font-size: 30px;
@@ -83,9 +84,11 @@ h2 {
   font-style: normal;
 }
 
-#lista {
-  padding-bottom: 20px;
+#lista li{
+  padding-bottom: 5px;
 }
+
+
 
 h2 {
 }
